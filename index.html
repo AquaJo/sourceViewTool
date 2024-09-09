@@ -41,7 +41,8 @@
     >
     <br />
     <br />
-    If you want a static bookmark, feel free to use the following:
+    If you want a static bookmark, feel free to use the following (not working
+    rn):
     <a
       href='javascript:(function(){const e=document.querySelectorAll(".error"),c=-1;if(!e.length){console.log("No Errors Found! =]");return;}console.log(`${e.length} Error Found!`);const s=i=>{if(i>=0&&i<e.length){const el=e[i];el.scrollIntoView({behavior:"smooth",block:"center"});el.style.border="2px solid red";t();}},r=()=>{if(c>=0&&c<e.length)e[c].style.border="";},t=()=>{d.innerHTML=`Error ${c+1} of ${e.length}`;},n=document.createElement("button"),p=document.createElement("button"),d=document.createElement("div");n.innerText="Next";n.style.position="fixed";n.style.bottom="20px";n.style.right="20px";n.style.zIndex="1000";p.innerText="Previous";p.style.position="fixed";p.style.bottom="20px";p.style.right="80px";p.style.zIndex="1000";d.style.position="fixed";d.style.bottom="60px";d.style.right="20px";d.style.padding="5px 10px";d.style.backgroundColor="rgba(0, 0, 0, 0.7)";d.style.color="white";d.style.zIndex="1000";d.style.borderRadius="5px";d.style.fontFamily="Arial, sans-serif";document.body.appendChild(n);document.body.appendChild(p);document.body.appendChild(d);n.addEventListener("click",()=>{r();c=(c+1)%e.length;s(c);});p.addEventListener("click",()=>{r();c=(c-1+e.length)%e.length;s(c);});t();console.log("Click the buttons to navigate between errors.");})();'
       >View-Source-Tool</a
