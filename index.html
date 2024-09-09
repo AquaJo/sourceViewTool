@@ -41,8 +41,9 @@
     >
     <br />
     <br />
-    If you want a static bookmark, feel free to use the following (not working
-    rn):
+    If you want a static bookmark, feel free to use the following (not up to
+    date rn, ... will work on a github workflow later on, so it makes a static
+    copy automatically):
     <a
       href="javascript:(function(){const e=document.querySelectorAll('.error');let t=-1;if(0===e.length)return void console.log('No Errors Found! =]');function o(t){if(t>=0&&t<e.length){const o=e[t];o.scrollIntoView({behavior:'smooth',block:'center'}),o.style.border='2px solid red',l()}}function n(){t>=0&&t<e.length&&(e[t].style.border='')}function l(){s.innerHTML=`Error ${t+1} of ${e.length}`}console.log(`${e.length} Error Found!`);const r=document.createElement('button');r.innerText='Next',r.style.position='fixed',r.style.bottom='20px',r.style.right='20px',r.style.zIndex='1000';const i=document.createElement('button');i.innerText='Previous',i.style.position='fixed',i.style.bottom='20px',i.style.right='80px',i.style.zIndex='1000';const s=document.createElement('div');s.style.position='fixed',s.style.bottom='60px',s.style.right='20px',s.style.padding='5px 10px',s.style.backgroundColor='rgba(0, 0, 0, 0.7)',s.style.color='white',s.style.zIndex='1000',s.style.borderRadius='5px',s.style.fontFamily='Arial, sans-serif',document.body.appendChild(r),document.body.appendChild(i),document.body.appendChild(s),r.addEventListener('click',function(){n(),t=(t+1)%e.length,o(t)}),i.addEventListener('click',function(){n(),t=(t-1+e.length)%e.length,o(t)}),l(),console.log('Click the buttons to navigate between errors.')}())"
       >View-Source-Tool</a
