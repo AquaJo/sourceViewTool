@@ -19,21 +19,21 @@
     }
   }
 
-  // Entferne die Hervorhebung des aktuellen Elements
+  // Reset Highlight
   function resetHighlight() {
     if (currentIndex >= 0 && currentIndex < errorElements.length) {
       errorElements[currentIndex].style.border = ""; // Entferne Hervorhebung
     }
   }
 
-  // Update der Statusanzeige
+  // Update Status
   function updateStatus() {
     statusDiv.innerHTML = `Error ${currentIndex + 1} of ${
       errorElements.length
     }`;
   }
 
-  // Erstelle Buttons und Statusanzeige im DOM
+  // Create status bar in browser GUI
   const nextButton = document.createElement("button");
   nextButton.innerText = "Next";
   nextButton.style.position = "fixed";
