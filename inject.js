@@ -40,7 +40,11 @@
   // Start the error navigation at a specified interval
   function startInterval(increment) {
     if (intervalId) return; // Prevent multiple intervals
+    process();
     intervalId = setInterval(() => {
+      process();
+    }, intervalSpeed);
+    function process() {
       resetHighlight();
       currentIndex =
         (currentIndex + increment + errorElements.length) %
@@ -49,7 +53,7 @@
 
       // Speed up navigation
       intervalSpeed = Math.max(intervalSpeed - speedIncrement, minSpeed);
-    }, intervalSpeed);
+    }
   }
 
   // Stop the error navigation
