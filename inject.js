@@ -2,7 +2,7 @@
   const errorElements = document.querySelectorAll(".error");
   let currentIndex = -1; // initial index: -1 --> no error selected yet
   let intervalId = null;
-  let intervalSpeed = 200; // Initial speed of error navigation (in milliseconds)
+  let intervalSpeed = 120; // Initial speed of error navigation (in milliseconds)
   const minSpeed = 50; // Minimum speed of error navigation (in milliseconds)
   const speedIncrement = 20; // Amount to decrease speed each time
 
@@ -60,7 +60,7 @@
   function stopInterval() {
     clearInterval(intervalId);
     intervalId = null;
-    intervalSpeed = 200; // Reset speed
+    intervalSpeed = 120; // Reset speed
   }
 
   // Create status bar in browser GUI
