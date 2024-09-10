@@ -25,5 +25,5 @@ You may also find a way to save a browser snippet in Mozilla, similar to how it'
 
 ## Todo
 
-- github workflow for index.html bookmarklet updating
-- configure auto injection =]
+- configure auto injection
+- improve CI/CD
