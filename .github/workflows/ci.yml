@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "inject.js"
+      - "scripts/index.ejs"
+      - "scripts/generateHTML.js"
     branches:
       - main # only updates index.html on branch main
 permissions:
@@ -35,5 +37,3 @@ jobs:
           git add .
           git commit -m "Auto-build commit from GitHub Actions"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
