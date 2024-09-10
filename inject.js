@@ -8,7 +8,7 @@
 
   if (errorElements.length === 0) {
     console.log("No Errors Found! :]");
-    alert("No Errors Found!");
+    alert("No Errors Found! :]");
     return;
   }
   console.log(`${errorElements.length} Errors Found!`);
