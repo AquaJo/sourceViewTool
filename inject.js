@@ -11,7 +11,6 @@
     alert("No Errors Found!");
     return;
   }
-
   console.log(`${errorElements.length} Errors Found!`);
 
   // Function to get scroll smoothly to error
