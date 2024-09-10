@@ -2,6 +2,8 @@ name: Build and Commit
 
 on:
   push:
+    paths:
+      - "inject.js"
     branches:
       - main # only updates index.html on branch main
 
