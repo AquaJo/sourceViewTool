@@ -7,7 +7,7 @@
   const speedIncrement = 20; // Amount to decrease speed each time
 
   if (errorElements.length === 0) {
-    console.log("No Errors Found! =]");
+    console.log("No Errors Found! :]");
     alert("No Errors Found!");
     return;
   }
