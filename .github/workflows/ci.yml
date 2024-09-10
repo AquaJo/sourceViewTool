@@ -6,6 +6,8 @@ on:
       - "inject.js"
     branches:
       - main # only updates index.html on branch main
+permissions:
+  contents: write
 
 jobs:
   build:
