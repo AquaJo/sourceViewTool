@@ -8,10 +8,11 @@
 
   if (errorElements.length === 0) {
     console.log("No Errors Found! =]");
+    alert("No Errors Found! =]");
     return;
   }
 
-  console.log(`${errorElements.length} Error Found!`);
+  console.log(`${errorElements.length} Errors Found!`);
 
   // Function to get scroll smoothly to error
   function scrollToError(index) {
