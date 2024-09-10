@@ -7,8 +7,8 @@ I help you jumping right to the errors you need to fix!
 
 ### Bookmarklet
 
-Be aware, this way it keeps updating to the newest version on github automatically bc of eval!
-Go to [this website](https://aquajo.github.io/sourceViewTool/) and drag the bookmarklet into your bookmarklets-list.\
+Be aware to choose the bookmark type you want, a static one or an automatically updating one!\
+Go to [this website](https://aquajo.github.io/sourceViewTool/) and drag the bookmarklet into your bookmarklets-list.
 
 ### The long way
 
