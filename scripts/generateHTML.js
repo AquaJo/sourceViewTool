@@ -26,7 +26,7 @@ fs.readFile(filePath, "utf8", async (err, data) => {
     const bookmarkletCode = await convert(code, options);
     const staticJavascript = bookmarkletCode;
 
-    // Render the EJS template
+    // Render the EJS template --> CI
     ejs.renderFile(
       path.join(__dirname, "./index.ejs"),
       { staticJavascript },
